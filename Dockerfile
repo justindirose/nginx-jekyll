@@ -25,4 +25,5 @@ RUN gem install bundler
 # Configure Nginx
 RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
 COPY nginx.conf /etc/nginx/nginx.conf
+RUN mkdir /etc/nginx/sites-available && mkdir /etc/nginx/sites-enabled
 
